@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sreejan Bose — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#0ea5a4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071021 0%, #0b1220 100%);color:#e6eef6}
+    .container{max-width:var(--maxw);margin:32px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#1fb6b3);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:#021018}
+    h1{margin:0;font-size:clamp(20px,3vw,28px)}
+    .subtitle{color:var(--muted);font-size:14px;margin-top:6px}
+    .contact{margin-left:auto;text-align:right}
+    .contact a{color:var(--muted);text-decoration:none;display:inline-block;margin-left:10px;font-size:14px}
+
+    .section{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03)}
+    .section h2{font-size:14px;letter-spacing:1px;margin:0 0 12px 0;color:#cfeef0}
+
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .card{background:var(--glass);padding:16px;border-radius:10px}
+    .edu .row{display:flex;justify-content:space-between;gap:12px}
+    .projects .project{margin-bottom:14px}
+    .project h3{margin:0 0 6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:6px;font-size:13px;color:var(--muted)}
+
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.two-col{grid-template-columns:1fr;}.contact{text-align:left;margin-top:10px}}
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <div class="avatar">SB</div>
+      <div>
+        <h1>Sreejan Bose</h1>
+        <div class="subtitle">B. Tech, Computer Science & Engineering — Vellore Institute of Technology</div>
+        <div class="subtitle">CGPA: 7.81 • July 2022 — June 2026</div>
+      </div>
+      <div class="contact">
+        <div><a href="mailto:sreejanbose40@gmail.com">sreejanbose40@gmail.com</a></div>
+        <div style="margin-top:6px"><a href="tel:9818035688">+91 9818035688</a> • <a href="https://www.linkedin.com/in/sreejan-bose-8b69a4320?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a> • <a href="https://github.com/MR-CONTROL">GitHub</a></div>
+      </div>
+    </header>
+
+    <section class="section two-col">
+      <div>
+        <div class="card edu">
+          <h2>Education</h2>
+          <div class="row">
+            <div>
+              <strong>Vellore Institute of Technology, Vellore</strong>
+              <div class="meta">B. TECH Computer Science and Engineering</div>
+            </div>
+            <div style="text-align:right">
+              <div class="meta">July 2022 - June 2026</div>
+              <div class="meta">CGPA: 7.81</div>
+            </div>
+          </div>
+          <p style="margin-top:12px;color:var(--muted)"><strong>Relevant Coursework:</strong> DBMS, Operating Systems, OOPs, Computer Networks, Software Engineering</p>
+        </div>
+
+        <div class="card projects" style="margin-top:14px">
+          <h2>Projects</h2>
+
+          <div class="project">
+            <h3>Sign Language Recognition System</h3>
+            <div class="meta">Python, MediaPipe, OpenCV, NumPy, scikit-learn, TensorFlow / Keras</div>
+            <p class="meta" style="margin-top:8px">Real-time hand landmark detection and gesture classification using MediaPipe and Random Forest. Converts gestures to text & speech for inclusive communication.</p>
+            <p style="margin-top:8px"><a href="https://github.com/MR-CONTROL/Sign-Language-Recognition-System" style="color:var(--accent);text-decoration:none">GitHub</a></p>
+          </div>
+
+          <div class="project">
+            <h3>Face Recognition using OpenCV</h3>
+            <div class="meta">OpenCV, MTCNN, YOLO, FaceNet / DeepFace</div>
+            <p class="meta" style="margin-top:8px">Built an authentication system using CNN-based embeddings for high-precision face recognition. Integrated real-time camera feed processing and optimized model achieving ~95% accuracy.</p>
+          </div>
+
+          <div class="project">
+            <h3>Cybersecurity Threat Detection Platform using ML</h3>
+            <div class="meta">Python, C++, Wireshark TShark, Random Forest, scikit-learn, Pandas, OpenCV, Joblib, PCAP, CSV</div>
+            <p class="meta" style="margin-top:8px">AI-powered real-time system capturing network traffic, extracting features, and classifying packets as SAFE or THREAT. Visualizes network activity in real-time.</p>
+            <p style="margin-top:8px"><a href="https://github.com/MR-CONTROL/CYBERSECURITY-THREAT-DETECTION-PLATFORM-USING-ML" style="color:var(--accent);text-decoration:none">GitHub</a></p>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Certifications & Achievements</h2>
+          <ul class="meta" style="margin:8px 0 0 18px;padding:0">
+            <li>Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h2>Skills</h2>
+          <div style="margin-top:8px" class="skills">
+            <div class="tag">Artificial Intelligence</div>
+            <div class="tag">Machine Learning</div>
+            <div class="tag">Python</div>
+            <div class="tag">Java</div>
+            <div class="tag">HTML/CSS</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">SQL</div>
+            <div class="tag">MediaPipe</div>
+            <div class="tag">OpenCV</div>
+            <div class="tag">NumPy</div>
+            <div class="tag">scikit-learn</div>
+            <div class="tag">TensorFlow / Keras</div>
+          </div>
+
+          <h2 style="margin-top:14px">Tools</h2>
+          <div class="meta">Git, GitHub, VS Code</div>
+
+          <h2 style="margin-top:14px">Professional</h2>
+          <div class="meta">Adaptability, Leadership, Clear Communication, Time Management, Growth Mindset</div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Languages</h2>
+          <div class="meta">Python, Java, HTML, CSS, JavaScript, SQL</div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div>Made by Sreejan Bose </div>
+    </footer>
+  </main>
+</body>
+</html>
